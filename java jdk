@@ -1,3 +1,22 @@
+
+
+OpenJDK Runtime Environment (Java SE 8)
+
+yum install java-1.8.0-openjdk
+OpenJDK Development Environment (Java SE 8)
+
+this will run 
+yum install java-1.8.0-openjdk-devel
+There's also a 'headless' JRE package that is the same as the above JRE, except it doesn't contain audio/video support. This can be used for a slightly more minimal installation:
+
+OpenJDK Runtime Environment - Headless (Java SE 8)
+
+yum install java-1.8.0-openjdk-headless
+
+
+
+=====================================
+
 java -version
 # Install Java v8 (if it is lesser than v8)
 sudo yum -y install java-1.8.0-openjdk
