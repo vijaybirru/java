@@ -24,3 +24,23 @@ sudo yum -y remove java-1.7.0-openjdk
 java -version
 echo $JAVA_HOME
 # export PATH=$JAVA_HOME/bin:$PATH 
+
+
+----------maven and java home path
+
+cd /root
+vi .bash_profile
+add below lines 
+
+export M2_HOME=/usr/local/maven
+export PATH=$PATH:$M2_HOME/bin
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+export PATH=$PATH:$JAVA_HOME:$HOME/bin
+---
+sudo yum -y install java-1.8.0-openjdk
+sudo yum -y remove java-1.8.0-openjdk
+------
+then save and exit
+and type command
+Simply type----    source ~/.bash_profile
